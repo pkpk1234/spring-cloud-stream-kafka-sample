@@ -10,6 +10,6 @@ public interface Source {
 
     String OUTPUT = "event";
 
-    @Output(Source.OUTPUT)
+    @Output(Source.OUTPUT) //@Output value must the same as Sink's
     MessageChannel output();
 }

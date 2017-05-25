@@ -9,6 +9,6 @@ import org.springframework.messaging.SubscribableChannel;
 public interface Sink {
     String INPUT = "event";
 
-    @Input(Sink.INPUT)
+    @Input(Sink.INPUT) //@Output value must the same as Sink's
     SubscribableChannel input();
 }
